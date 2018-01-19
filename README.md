@@ -8,4 +8,4 @@ Arch Linux based pandoc image including:
 Command runs in `/source` so you can bind volumes there.
 For example:
 
-    docker run -v $(pwd):/source nazarewk/pandoc input.md output.pdf****
+    docker run -v $(pwd):/source nazarewk/pandoc input.md output.pdf
