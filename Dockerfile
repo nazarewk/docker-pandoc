@@ -1,5 +1,5 @@
 FROM nazarewk/archlinux
 MAINTAINER Krzysztof Nazarewski <nazarewk+docker@gmail.com>
 
-RUN pacman -S --noconfirm pandoc pandoc-citeproc pandoc-crossref texlive-most \
- && paccache -rk 0
+RUN yaourt -S --noconfirm pandoc pandoc-citeproc pandoc-crossref texlive-most \
+ && sudo paccache -rk 0 && rm -Rf /tmp/*
