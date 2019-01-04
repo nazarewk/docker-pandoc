@@ -1,7 +1,7 @@
 FROM nazarewk/archlinux
 MAINTAINER Krzysztof Nazarewski <nazarewk+docker@gmail.com>
 
-RUN yay -S --noconfirm pandoc pandoc-citeproc pandoc-crossref texlive-most \
+RUN yay -S --noconfirm pandoc-bin pandoc-citeproc pandoc-crossref texlive-most \
  && sudo docker-build-cleanup arch
 
 WORKDIR /source
